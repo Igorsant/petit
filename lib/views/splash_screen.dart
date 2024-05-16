@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:petit/views/login.dart';
+import 'package:petit/views/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -17,12 +17,11 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
         MaterialPageRoute(
             builder: (context) =>
-                const LoginView(title: 'Flutter Demo Home Page')),
+                const HomePageView()),
       );
     });
   }
 
-  @override
   @override
   Widget build(BuildContext context) {
     return Scaffold(
