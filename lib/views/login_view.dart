@@ -5,11 +5,20 @@ class LoginView extends StatelessWidget {
   const LoginView({super.key});
 
   @override
-  Widget build(context){
+  Widget build(context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromRGBO(0, 0, 0, 0),
+        iconTheme: const IconThemeData(color: Color.fromRGBO(255, 255, 234, 1), size: 40, weight: 100),
+      ),
+      extendBodyBehindAppBar: true,
       body: BackgroundContainer(
-        topSpace: MediaQuery.of(context).size.height * 0.2,
-        child: const Center(child: Text('Login Page')),
+        topSpace: 110,
+        child: Column(
+          children: [
+            Text('Bem Vindo!', style: Theme.of(context).textTheme.labelLarge!.copyWith(fontSize: 32),),
+          ],
+        ),
       ),
     );
   }

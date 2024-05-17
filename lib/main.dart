@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:petit/views/login_view.dart';
 import 'package:petit/views/splash_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,9 +20,7 @@ class MyApp extends StatelessWidget {
                   GoogleFonts.inter(fontSize: 40, fontWeight: FontWeight.bold),
               labelMedium: GoogleFonts.leagueSpartan(fontSize: 24))),
       home: const SplashScreen(),
-      routes: {
-        "/login": (context) => const LoginView(),
-      },
+      routes: const {},
     );
   }
 }
