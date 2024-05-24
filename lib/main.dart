@@ -14,11 +14,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-          useMaterial3: true,
-          textTheme: TextTheme(
-              labelLarge:
-                  GoogleFonts.inter(fontSize: 40, fontWeight: FontWeight.bold),
-              labelMedium: GoogleFonts.leagueSpartan(fontSize: 24))),
+        useMaterial3: true,
+        textTheme: TextTheme(
+          labelLarge:
+              GoogleFonts.inter(fontSize: 40, fontWeight: FontWeight.bold),
+          labelMedium: GoogleFonts.leagueSpartan(fontSize: 24),
+          labelSmall: GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w300),
+          headlineMedium: GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w400)
+        ),
+      ),
       home: const SplashScreen(),
       routes: const {},
     );

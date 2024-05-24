@@ -35,6 +35,13 @@ class BackgroundContainer extends StatelessWidget {
             child: Container(
               width: double.infinity,
               decoration: const BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromRGBO(0, 0, 0, 0.25),
+                    offset: Offset(0, -3),
+                    blurRadius: 30,
+                  ),
+                ],
                 color: Color.fromRGBO(255, 255, 234, 1),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(38),

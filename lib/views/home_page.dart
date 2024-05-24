@@ -25,9 +25,15 @@ class HomePageView extends StatelessWidget {
               width: 279,
               margin: const EdgeInsets.only(bottom: 5, top: 30),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const LoginView()));
+                },
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromRGBO(25, 131, 199, 1)),
+                  backgroundColor: const Color.fromRGBO(25, 131, 199, 1),
+                  elevation: 3,
+                  padding: const EdgeInsets.all(10),
+                ),
                 child: Text(
                   style: Theme.of(context)
                       .textTheme
@@ -37,11 +43,16 @@ class HomePageView extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
             SizedBox(
               width: 279,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromRGBO(176, 224, 255, 1),
+                  elevation: 3,
+                  padding: const EdgeInsets.all(10),
                 ),
                 onPressed: () {},
                 child: Text(
@@ -54,12 +65,14 @@ class HomePageView extends StatelessWidget {
               margin: const EdgeInsets.only(top: 50),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   backgroundColor: const Color.fromRGBO(250, 162, 98, 1),
+                  elevation: 3,
+                  padding: const EdgeInsets.all(10),
                 ),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => const LoginView()));
-                },
+                onPressed: () {},
                 child: Text(
                   style: Theme.of(context)
                       .textTheme
