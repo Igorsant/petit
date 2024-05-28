@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:petit/components/background_container.dart';
+import 'package:petit/views/register/register_1.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -163,7 +164,10 @@ class LoginView extends StatelessWidget {
                     style: Theme.of(context).textTheme.headlineMedium,
                     "Não possui conta? "),
                 TextButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const RegisterView())) 
+                  },
                   child: Text(
                       style: Theme.of(context)
                           .textTheme
