@@ -69,7 +69,7 @@ class LoginView extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 60,
+              height: 40,
             ),
             SizedBox(
               width: 208,
@@ -89,7 +89,7 @@ class LoginView extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 60),
+            const SizedBox(height: 40),
             Row(
               children: [
                 const Expanded(

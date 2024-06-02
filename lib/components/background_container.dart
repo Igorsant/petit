@@ -48,7 +48,7 @@ class BackgroundContainer extends StatelessWidget {
                   topRight: Radius.circular(38),
                 ),
               ),
-              child: child,
+              child: SingleChildScrollView(child: child),
             ),
           )
         ],

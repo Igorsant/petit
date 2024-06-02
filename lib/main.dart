@@ -19,8 +19,10 @@ class MyApp extends StatelessWidget {
           labelLarge:
               GoogleFonts.inter(fontSize: 40, fontWeight: FontWeight.bold),
           labelMedium: GoogleFonts.leagueSpartan(fontSize: 24),
-          labelSmall: GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w300),
-          headlineMedium: GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w400)
+          labelSmall:
+              GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w300),
+          headlineMedium:
+              GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w400),
         ),
       ),
       home: const SplashScreen(),

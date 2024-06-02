@@ -11,7 +11,7 @@ class HomePageView extends StatelessWidget {
     return Scaffold(
         body: Stack(children: [
       BackgroundContainer(
-        topSpace: hasHeightSpace ? 400 : 0,
+        topSpace: hasHeightSpace ? 400 : 100,
         child: Column(
           children: [
             const SizedBox(
@@ -85,17 +85,16 @@ class HomePageView extends StatelessWidget {
           ],
         ),
       ),
-      if (hasHeightSpace)
-        Align(
-            alignment: const Alignment(0, -1),
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 130,
-                ),
-                Image.asset("images/young_man.png"),
-              ],
-            )),
+      Align(
+          alignment: const Alignment(0, -1),
+          child: Column(
+            children: [
+              SizedBox(
+                height: hasHeightSpace ? 130 : 0,
+              ),
+              Image.asset("images/young_man.png", scale: hasHeightSpace ? 1 : 2.5,),
+            ],
+          )),
     ]));
   }
 }
