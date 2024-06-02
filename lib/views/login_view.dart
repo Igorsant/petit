@@ -166,7 +166,7 @@ class LoginView extends StatelessWidget {
                 TextButton(
                   onPressed: () => {
                     Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => const RegisterView())) 
+                      MaterialPageRoute(builder: (_) => const RegisterViewFirstStep())) 
                   },
                   child: Text(
                       style: Theme.of(context)
